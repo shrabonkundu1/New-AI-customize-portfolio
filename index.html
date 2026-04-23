@@ -1,3 +1,6 @@
+Shrabon kundu portfolio · HTML
+Copy
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
 <style>
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
+ 
   :root {
     --bg: #0a0a0a;
     --bg2: #111;
@@ -19,9 +22,9 @@
     --border: rgba(255,255,255,0.08);
     --card: #131313;
   }
-
+ 
   html { scroll-behavior: smooth; }
-
+ 
   body {
     background: var(--bg);
     color: var(--fg);
@@ -31,7 +34,7 @@
     overflow-x: hidden;
     cursor: none;
   }
-
+ 
   /* ─── CUSTOM CURSOR ─── */
   .cursor {
     width: 12px; height: 12px;
@@ -57,7 +60,7 @@
   }
   body:has(a:hover) .cursor { width: 20px; height: 20px; background: #fff; }
   body:has(a:hover) .cursor-ring { width: 50px; height: 50px; opacity: 0.2; }
-
+ 
   /* ─── NOISE OVERLAY ─── */
   body::before {
     content: '';
@@ -68,8 +71,8 @@
     z-index: 9997;
     opacity: 0.35;
   }
-
-/* shrabon */
+ 
+  /* ─── NAV ─── */
   nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -124,7 +127,7 @@
   }
   .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(200,255,0,0.25); }
   .nav-cta::after { display: none !important; }
-
+ 
   /* ─── HERO ─── */
   #hero {
     min-height: 100vh;
@@ -190,7 +193,7 @@
     animation: dotBlink 2s ease-in-out infinite;
   }
   @keyframes dotBlink { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.4;transform:scale(0.7)} }
-
+ 
   h1 {
     font-family: 'Syne', sans-serif;
     font-weight: 800;
@@ -220,7 +223,7 @@
     -webkit-text-stroke: 2px var(--fg);
     color: transparent;
   }
-
+ 
   .hero-desc {
     max-width: 520px;
     color: var(--muted);
@@ -232,7 +235,7 @@
     animation: fadeUp 0.6s 0.8s forwards;
   }
   .hero-desc strong { color: var(--fg); font-weight: 700; }
-
+ 
   .hero-actions {
     display: flex;
     align-items: center;
@@ -280,7 +283,7 @@
     transition: color 0.2s, gap 0.2s;
   }
   .btn-ghost:hover { color: var(--fg); gap: 0.8rem; }
-
+ 
   .hero-socials {
     position: absolute;
     right: 3rem; top: 50%;
@@ -303,7 +306,7 @@
     transition: color 0.2s, transform 0.2s;
   }
   .hero-socials a:hover { color: var(--accent); transform: translateX(-3px); }
-
+ 
   .hero-scroll-hint {
     position: absolute;
     bottom: 2.5rem;
@@ -335,14 +338,14 @@
     color: var(--muted);
     font-weight: 700;
   }
-
+ 
   @keyframes fadeUp {
     to { opacity: 1; transform: translateY(0); }
   }
   @keyframes fadeIn {
     to { opacity: 1; }
   }
-
+ 
   /* ─── MARQUEE ─── */
   .marquee-section {
     border-top: 1px solid var(--border);
@@ -373,7 +376,7 @@
   }
   .marquee-item .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
   .marquee-section:hover .marquee-track { animation-play-state: paused; }
-
+ 
   /* ─── SECTION SHARED ─── */
   section { padding: 7rem 3rem; }
   .section-label {
@@ -400,7 +403,7 @@
     letter-spacing: -0.02em;
     margin-bottom: 1rem;
   }
-
+ 
   /* ─── ABOUT ─── */
   #about { max-width: 1200px; margin: 0 auto; }
   .about-grid {
@@ -492,7 +495,7 @@
     0%,100% { transform: translate(0,0); }
     50% { transform: translate(-5px,-5px); }
   }
-
+ 
   /* ─── SKILLS ─── */
   #skills { background: var(--bg2); }
   .skills-inner { max-width: 1200px; margin: 0 auto; }
@@ -542,7 +545,7 @@
     cursor: default;
   }
   .skill-tag:hover { color: var(--fg); border-color: rgba(200,255,0,0.4); transform: translateY(-2px); }
-
+ 
   /* ─── PROJECTS ─── */
   #projects { max-width: 1200px; margin: 0 auto; }
   .projects-header {
@@ -633,7 +636,7 @@
     transition: transform 0.3s, color 0.2s;
   }
   .project-row:hover .project-arrow { transform: translate(4px,-4px); color: var(--accent); }
-
+ 
   /* ─── EXPERIENCE ─── */
   #experience { background: var(--bg2); }
   .exp-inner { max-width: 1200px; margin: 0 auto; }
@@ -683,7 +686,7 @@
     color: var(--muted);
     line-height: 1.75;
   }
-
+ 
   /* ─── CONTACT ─── */
   #contact {
     max-width: 1200px;
@@ -742,7 +745,7 @@
     border-color: var(--accent);
   }
   .contact-link-primary:hover { background: #fff; border-color: #fff; color: #000; }
-
+ 
   /* ─── FOOTER ─── */
   footer {
     border-top: 1px solid var(--border);
@@ -753,7 +756,7 @@
   }
   footer p { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
   footer span { color: var(--accent); }
-
+ 
   /* ─── REVEAL ANIMATIONS ─── */
   .reveal {
     opacity: 0;
@@ -767,7 +770,7 @@
     transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
   }
   .reveal-left.visible { opacity: 1; transform: translateX(0); }
-
+ 
   /* ─── CHAR HOVER ON H2 ─── */
   .split-hover span {
     display: inline-block;
@@ -776,7 +779,7 @@
   .split-hover:hover span { color: var(--accent); }
   .split-hover:hover span:nth-child(odd) { transform: translateY(-4px); }
   .split-hover:hover span:nth-child(even) { transform: translateY(4px); }
-
+ 
   /* ─── SCROLL PROGRESS ─── */
   .progress-bar {
     position: fixed;
@@ -786,14 +789,234 @@
     z-index: 9999;
     transition: width 0.1s;
   }
+ 
+  /* ─── HAMBURGER ─── */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 4px;
+    z-index: 200;
+  }
+  .hamburger span {
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background: var(--fg);
+    border-radius: 2px;
+    transition: transform 0.35s cubic-bezier(0.4,0,0.2,1), opacity 0.25s, width 0.3s;
+    transform-origin: center;
+  }
+  .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; width: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+ 
+  /* ─── MOBILE DRAWER ─── */
+  .mobile-drawer {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(10,10,10,0.98);
+    backdrop-filter: blur(20px);
+    z-index: 150;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s;
+  }
+  .mobile-drawer.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .mobile-drawer a {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: clamp(2rem, 8vw, 3rem);
+    color: var(--muted);
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    padding: 0.6rem 0;
+    transition: color 0.2s, transform 0.2s;
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  .mobile-drawer.open a {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .mobile-drawer.open a:nth-child(1) { transition-delay: 0.05s; }
+  .mobile-drawer.open a:nth-child(2) { transition-delay: 0.1s; }
+  .mobile-drawer.open a:nth-child(3) { transition-delay: 0.15s; }
+  .mobile-drawer.open a:nth-child(4) { transition-delay: 0.2s; }
+  .mobile-drawer.open a:nth-child(5) { transition-delay: 0.25s; }
+  .mobile-drawer a:hover { color: var(--accent); }
+  .mobile-drawer .drawer-cta {
+    margin-top: 1.5rem;
+    background: var(--accent);
+    color: #000 !important;
+    padding: 0.9rem 2.5rem;
+    border-radius: 2px;
+    font-size: 1rem !important;
+  }
+  .mobile-drawer .drawer-socials {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s 0.3s, transform 0.3s 0.3s;
+  }
+  .mobile-drawer.open .drawer-socials { opacity: 1; transform: translateY(0); }
+  .mobile-drawer .drawer-socials a {
+    font-size: 0.78rem !important;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    writing-mode: horizontal-tb;
+    padding: 0;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+ 
+  /* ═══════════════════════════════
+     RESPONSIVE BREAKPOINTS
+  ════════════════════════════════ */
+ 
+  /* ─── TABLET: ≤900px ─── */
+  @media (max-width: 900px) {
+    nav { padding: 1.2rem 1.8rem; }
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .mobile-drawer { display: flex; }
+ 
+    #hero { padding: 6rem 1.8rem 5rem; }
+    .hero-socials { display: none; }
+    .hero-scroll-hint { left: 1.8rem; transform: none; }
+ 
+    section { padding: 5rem 1.8rem; }
+    #contact { padding: 5rem 1.8rem; }
+ 
+    .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .about-visual { height: 320px; }
+    .about-frame-deco { display: none; }
+ 
+    .exp-item { grid-template-columns: 140px 1fr; gap: 1.5rem; }
+ 
+    .project-row { grid-template-columns: 50px 1fr auto; gap: 1rem; }
+    .project-name { font-size: 1.2rem; }
+ 
+    footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.5rem; }
+  }
+ 
+  /* ─── MOBILE: ≤600px ─── */
+  @media (max-width: 600px) {
+    body { cursor: auto; }
+    .cursor, .cursor-ring { display: none; }
+ 
+    nav { padding: 1rem 1.2rem; }
+ 
+    #hero {
+      padding: 5.5rem 1.2rem 4rem;
+      min-height: 100svh;
+      align-items: flex-start;
+      padding-top: 6rem;
+    }
+    .hero-accent-circle { width: 300px; height: 300px; right: -80px; }
+    h1 { font-size: clamp(2.8rem, 13vw, 4.5rem); margin-bottom: 1.2rem; }
+    .hero-desc { font-size: 0.95rem; margin-bottom: 2rem; }
+    .hero-actions { flex-direction: column; align-items: flex-start; gap: 1rem; }
+    .btn-primary { width: 100%; justify-content: center; padding: 0.9rem 1.5rem; }
+    .hero-scroll-hint { display: none; }
+ 
+    section { padding: 4rem 1.2rem; }
+    #contact { padding: 4rem 1.2rem; }
+ 
+    h2 { font-size: clamp(1.9rem, 7vw, 2.8rem); }
+ 
+    /* About */
+    .about-grid { gap: 2.5rem; }
+    .about-visual { height: 240px; }
+    .about-stats { grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+    .stat-card { padding: 1rem; }
+    .stat-num { font-size: 2rem; }
+    .stat-label { font-size: 0.72rem; }
+ 
+    /* Skills */
+    .skills-grid { grid-template-columns: 1fr; }
+ 
+    /* Projects */
+    #projects { max-width: 100%; }
+    .projects-header { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
+    .project-row {
+      grid-template-columns: 1fr auto;
+      grid-template-rows: auto auto;
+      gap: 0.3rem 0.8rem;
+      padding: 1.5rem 0;
+    }
+    .project-num {
+      grid-column: 1; grid-row: 1;
+      font-size: 0.68rem;
+      margin-bottom: 0.2rem;
+    }
+    .project-info { grid-column: 1; grid-row: 2; }
+    .project-arrow { grid-column: 2; grid-row: 1 / 3; align-self: center; font-size: 1.1rem; }
+    .project-name { font-size: 1.1rem; }
+    .project-desc { font-size: 0.82rem; }
+    .project-row:hover { padding-left: 0; }
+ 
+    /* Experience */
+    .exp-item { grid-template-columns: 1fr; gap: 0.4rem; padding: 1.8rem 0; }
+    .exp-date { font-size: 0.72rem; margin-bottom: 0.2rem; }
+    .exp-role { font-size: 1.05rem; }
+    .exp-desc { font-size: 0.85rem; }
+ 
+    /* Contact */
+    .contact-big { font-size: clamp(2.2rem, 10vw, 3.5rem); }
+    .contact-links { flex-direction: column; align-items: stretch; gap: 0.8rem; }
+    .contact-link { justify-content: center; padding: 0.9rem 1.2rem; }
+ 
+    /* Footer */
+    footer { flex-direction: column; gap: 0.4rem; padding: 1.2rem; text-align: center; }
+  }
+ 
+  /* ─── TINY: ≤380px ─── */
+  @media (max-width: 380px) {
+    h1 { font-size: 2.5rem; }
+    .about-stats { grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+    .stat-num { font-size: 1.7rem; }
+  }
 </style>
 </head>
 <body>
-
+ 
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 <div class="progress-bar" id="progress"></div>
-
+ 
+<!-- MOBILE DRAWER -->
+<div class="mobile-drawer" id="mobileDrawer">
+  <a href="#about" class="drawer-link">About</a>
+  <a href="#skills" class="drawer-link">Skills</a>
+  <a href="#projects" class="drawer-link">Projects</a>
+  <a href="#experience" class="drawer-link">Experience</a>
+  <a href="#contact" class="drawer-link drawer-cta">Hire Me</a>
+  <div class="drawer-socials">
+    <a href="https://github.com/shrabonkundu1" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/shrabon-kundu/" target="_blank">LinkedIn</a>
+  </div>
+</div>
+ 
 <!-- NAV -->
 <nav id="navbar">
   <a href="#hero" class="nav-logo">SK<span>.</span></a>
@@ -804,8 +1027,11 @@
     <li><a href="#experience">Experience</a></li>
     <li><a href="#contact" class="nav-cta">Hire Me</a></li>
   </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
-
+ 
 <!-- HERO -->
 <section id="hero">
   <div class="hero-grid"></div>
@@ -834,7 +1060,7 @@
     <span class="scroll-text">Scroll</span>
   </div>
 </section>
-
+ 
 <!-- MARQUEE -->
 <div class="marquee-section">
   <div class="marquee-track" id="marqueeTrack">
@@ -856,7 +1082,7 @@
     <span class="marquee-item"><span class="dot"></span>Open Source Contributor</span>
   </div>
 </div>
-
+ 
 <!-- ABOUT -->
 <section>
   <div id="about">
@@ -895,7 +1121,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- SKILLS -->
 <section id="skills">
   <div class="skills-inner">
@@ -950,7 +1176,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- PROJECTS -->
 <section>
   <div id="projects">
@@ -1018,7 +1244,7 @@
     <p style="font-size:0.8rem;color:var(--muted);margin-top:1.5rem;font-style:italic;">* Update project names, descriptions, and links with your actual GitHub repositories.</p>
   </div>
 </section>
-
+ 
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="exp-inner">
@@ -1055,7 +1281,7 @@
     <p style="font-size:0.8rem;color:var(--muted);margin-top:1.5rem;font-style:italic;">* Replace with your actual experience from LinkedIn.</p>
   </div>
 </section>
-
+ 
 <!-- CONTACT -->
 <section id="contact">
   <div class="reveal">
@@ -1071,49 +1297,70 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- FOOTER -->
 <footer>
   <p>© 2025 <span>Shrabon Kundu</span> — Dhaka, Bangladesh</p>
   <p>Designed & Built with <span>♥</span></p>
 </footer>
-
+ 
 <script>
-  // Cursor
+  // Cursor — hide on touch devices
+  const isTouchDevice = () => window.matchMedia('(hover: none)').matches;
   const cursor = document.getElementById('cursor');
   const ring = document.getElementById('cursorRing');
   let mx = 0, my = 0, rx = 0, ry = 0;
-  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cursor.style.left = mx+'px'; cursor.style.top = my+'px'; });
-  function animateRing() {
-    rx += (mx - rx) * 0.12;
-    ry += (my - ry) * 0.12;
-    ring.style.left = rx+'px'; ring.style.top = ry+'px';
-    requestAnimationFrame(animateRing);
+  if (!isTouchDevice()) {
+    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cursor.style.left = mx+'px'; cursor.style.top = my+'px'; });
+    function animateRing() {
+      rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
+      ring.style.left = rx+'px'; ring.style.top = ry+'px';
+      requestAnimationFrame(animateRing);
+    }
+    animateRing();
+  } else {
+    cursor.style.display = 'none';
+    ring.style.display = 'none';
+    document.body.style.cursor = 'auto';
   }
-  animateRing();
-
+ 
+  // Hamburger / Mobile Drawer
+  const hamburger = document.getElementById('hamburger');
+  const drawer = document.getElementById('mobileDrawer');
+  let drawerOpen = false;
+  function toggleDrawer() {
+    drawerOpen = !drawerOpen;
+    hamburger.classList.toggle('open', drawerOpen);
+    drawer.classList.toggle('open', drawerOpen);
+    document.body.style.overflow = drawerOpen ? 'hidden' : '';
+  }
+  hamburger.addEventListener('click', toggleDrawer);
+  drawer.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => { drawerOpen = true; toggleDrawer(); });
+  });
+ 
   // Progress bar
   const progress = document.getElementById('progress');
   window.addEventListener('scroll', () => {
     const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
     progress.style.width = pct + '%';
   });
-
+ 
   // Nav scroll
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 60);
   });
-
+ 
   // Reveal on scroll
   const reveals = document.querySelectorAll('.reveal, .reveal-left');
   const observer = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
     });
-  }, { threshold: 0.12 });
+  }, { threshold: 0.08 });
   reveals.forEach(el => observer.observe(el));
-
+ 
   // Count-up animation
   const counters = document.querySelectorAll('[data-count]');
   const countObserver = new IntersectionObserver(entries => {
@@ -1133,13 +1380,15 @@
     });
   }, { threshold: 0.5 });
   counters.forEach(c => countObserver.observe(c));
-
-  // Split hover text for h2
-  document.querySelectorAll('.split-hover').forEach(el => {
-    const text = el.textContent;
-    el.innerHTML = text.split('').map(c => c === ' ' ? ' ' : `<span>${c}</span>`).join('');
-  });
-
+ 
+  // Split hover text for h2 — desktop only
+  if (!isTouchDevice()) {
+    document.querySelectorAll('.split-hover').forEach(el => {
+      const text = el.textContent;
+      el.innerHTML = text.split('').map(c => c === ' ' ? ' ' : `<span>${c}</span>`).join('');
+    });
+  }
+ 
   // Stagger project rows
   document.querySelectorAll('.project-row').forEach((r, i) => {
     r.style.transitionDelay = (i * 0.08) + 's';
@@ -1147,4 +1396,3 @@
 </script>
 </body>
 </html>
-<!-- shrabon -->
